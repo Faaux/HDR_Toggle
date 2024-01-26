@@ -1,0 +1,20 @@
+[package]
+name = "hdrtoggle_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+inputbot = "0.6.0"
+single-instance = "0.3.3"
+
+
+[dependencies.windows-sys]
+version = "0.52"
+features = [
+    "Win32_Foundation",
+    "Win32_Devices",
+    "Win32_Devices_Display",
+    "Win32_Graphics_Gdi"
+]
